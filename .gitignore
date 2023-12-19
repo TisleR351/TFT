@@ -1,0 +1,40 @@
+# Django
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+db.sqlite3
+.env
+tft.iml
+
+# Next.js
+node_modules/
+.next/
+out/
+
+# Environment variables
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Logs
+logs/
+*.log
+
+# IDE settings
+.vscode/
+.idea/
+
+# Dependency directories
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+pythonenv/
+
+# Docker
+docker-compose.override.yml
+docker-compose.yml
+Dockerfile
