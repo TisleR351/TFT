@@ -8,16 +8,25 @@ To clone this project with SSH, simply run:
 git clone git@github.com:TisleR351/TFT.git
 cd TFT
 ```
-To turn on the Django Rest API, make sure you've installed Python 3.12.1 and just run these commands:
+To set up the Django Rest API, make sure you've installed Python 3.12.1 and just run this command:
 (make sure you're at the project's root @/TFT)
 ```console
-cd tft
-python -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-python manage.py migrate
- python manage.py runserver
+make setup
 ```
+If you want to know what commands this shortcut runs, just take a look at the Makefile.
+Then, you should have a ready database, with rights permissions.
+You should be able to launch API server with:
+```console
+make run
+```
+Please, note: base superuser credentials are
+
+```console
+username: admin
+password:  123
+```
+You will be able to change it at anytime.
+If you work with IntelliJ, I highly recommend to install BlackD plugin, and to configurate it with fresh installed dependencies blackd.
 
 If you want to run the frontEND application, make sure you've installed Node 21.5.0 and simply run:
 (make sure you're at the project's root @/TFT)
@@ -27,5 +36,5 @@ npm i
 npm run dev
 ```
 
-If you need further informations, don't hesitate to take a look at the README file in tisfittracker.
+If you need further informations, don't hesitate to take a look at the README file in FrontEND app ( @/tisfittracker ).
 You can also visit Django Rest Framework's & NextJS' documentations.
