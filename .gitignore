@@ -6,6 +6,7 @@ __pycache__/
 db.sqlite3
 .env
 tft.iml
+migrations/
 
 # Next.js
 node_modules/
@@ -38,3 +39,5 @@ pythonenv/
 docker-compose.override.yml
 docker-compose.yml
 Dockerfile
+
+/apitft/tisfittracker/migrations/
